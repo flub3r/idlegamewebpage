@@ -1,1 +1,10 @@
-{"name":"HASHNOVA","short_name":"HASHNOVA","start_url":"./","scope":"./","display":"standalone","background_color":"#050907","theme_color":"#07100d","description":"A cinematic crypto-mining idle game."}
+{
+  "name":"HASHNOVA — Autonomous Mining Command",
+  "short_name":"HASHNOVA",
+  "start_url":"./",
+  "scope":"./",
+  "display":"standalone",
+  "background_color":"#040706",
+  "theme_color":"#050907",
+  "description":"A fictional deep-progression crypto mining idle game."
+}
