@@ -4,7 +4,7 @@ Public GitHub Pages deployment for HASHNOVA, an installable crypto-mining idle g
 
 ## Play
 
-Once GitHub Pages is enabled with **Source: GitHub Actions**, the game is published at:
+The game is published at:
 
 `https://flub3r.github.io/idlegamewebpage/`
 
@@ -18,3 +18,5 @@ Once GitHub Pages is enabled with **Source: GitHub Actions**, the game is publis
 ## Deployment
 
 `main` contains a checksum-verified compressed source bundle. `.github/workflows/pages.yml` reconstructs it, runs TypeScript checks and tests, builds with the `/idlegamewebpage/` base path, and deploys the resulting `dist` directory to GitHub Pages.
+
+Pages source was enabled for GitHub Actions on 2026-08-20.
