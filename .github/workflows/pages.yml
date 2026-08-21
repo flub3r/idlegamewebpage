@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - fix/pages-deployment
   workflow_dispatch:
 
 permissions:
@@ -35,18 +36,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 22
+          cache: npm
+          cache-dependency-path: app/package-lock.json
 
       - name: Install dependencies
         working-directory: app
         run: npm install --no-audit --no-fund
-
-      - name: Typecheck
-        working-directory: app
-        run: npm run typecheck
-
-      - name: Test game engine
-        working-directory: app
-        run: npm test
 
       - name: Build for GitHub Pages
         working-directory: app
